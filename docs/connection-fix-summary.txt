@@ -1,0 +1,80 @@
+IAM-Ops Connection Fix Summary
+===============================
+
+Date: 2026-08-20
+
+Original Problem
+----------------
+Running the connection script produced this error:
+
+requests.exceptions.MissingSchema: Invalid URL 'None/api/v1/users/me': No scheme supplied.
+
+The error occurred because os.getenv() was given actual credential values instead of environment-variable names. The script used the Okta URL and API token as arguments to os.getenv(), so both lookups returned None.
+
+The original failing pattern was equivalent to:
+
+    org_url = os.getenv("https://...")
+    token = os.getenv("00p...")
+
+os.getenv() expects names such as OKTA_ORG_URL and OKTA_API_TOKEN.
+
+Repository Configuration
+------------------------
+The repository already defined these expected variables in .env.example:
+
+    OKTA_ORG_URL=https://your-org.okta.com
+    OKTA_API_TOKEN=your_api_token_here
+
+The local .env file contained the actual values. Its organization URL included /admin/home. That path is intended for the Okta browser interface and should not be part of the API base URL.
+
+Changes Made
+------------
+File: scripts/test_connection.py
+
+1. Added pathlib.Path.
+2. Changed dotenv loading so the script always loads the repository-root .env file, regardless of the current working directory.
+3. Changed the script to read OKTA_ORG_URL.
+4. Changed the script to read OKTA_API_TOKEN.
+5. Removed the trailing /admin/home path from the organization URL.
+6. Removed any trailing slash from the normalized URL.
+7. Added a clear RuntimeError when either required variable is missing.
+8. Kept the request endpoint as /api/v1/users/me.
+
+File: .gitignore
+
+Added .env to prevent local credentials from being committed to Git.
+
+Validation Attempts
+-------------------
+The first validation was run from the repository root using the system Python interpreter. It failed with:
+
+    ModuleNotFoundError: No module named 'dotenv'
+
+This showed that the system interpreter did not have the project dependency installed.
+
+The script was then run with the project's virtual-environment interpreter:
+
+    .\venv\Scripts\python.exe .\scripts\test_connection.py
+
+The request succeeded with HTTP status 200. Okta returned the authenticated user's profile, confirming that:
+
+- The .env file was loaded correctly.
+- The environment-variable names were correct.
+- The browser URL path was normalized correctly.
+- The API endpoint was reachable.
+- The API token was accepted.
+- The project virtual environment contained the required dependencies.
+
+A diagnostics check also reported no errors in scripts/test_connection.py.
+
+Security Notice
+---------------
+The API token was exposed in the original terminal/request context. It should be revoked and regenerated in Okta.
+
+The replacement token should be stored only in the local .env file. The .env file is now ignored by Git and should never be committed or pasted into documentation.
+
+Current Result
+--------------
+The connection test is working when run with the project virtual environment:
+
+    & .\venv\Scripts\python.exe .\scripts\test_connection.py
