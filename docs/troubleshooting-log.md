@@ -122,3 +122,10 @@ Error Code: access_denied
 - Several issues (2, 3) trace back to the same root cause — confusing the **admin console URL** with the **org base URL**. Once recognized, the second occurrence took seconds to fix instead of a full debugging cycle.
 - Issue 6 is a useful example of **sandbox environment limitations vs. production reality** — real orgs won't hit this, since they own the backend services being integrated.
 - Issue 9 demonstrates the RBAC model actually being enforced correctly by Okta, not a bug — the "fix" was closing an intentional gap in test data, not overriding a security control.
+
+---
+### 10. Admin account couldn't reach end-user dashboard
+**Where:** Phase 3, SAML testing
+**Symptom:** Logging in as the org's Super Admin always routed to the Admin Console, with no way to reach the standard "My Apps" end-user view.
+**Cause:** Super Admin accounts on Okta don't get the standard end-user dashboard experience by default.
+**Fix:** Created a dedicated non-admin test user and added them to `GRP-Standard-Employee`, which correctly landed on the standard end-user dashboard — also a more realistic way to validate the actual employee SSO experience anyway.
