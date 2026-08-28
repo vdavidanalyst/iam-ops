@@ -1,0 +1,100 @@
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T19:20:14.014Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:20:48.264Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:20:48.359Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:21:10.786Z"}
+{"eventType": "user.authentication.verify", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:21:10.918Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T19:21:11.748Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T19:21:14.269Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T19:21:14.274Z"}
+{"eventType": "user.authentication.sso", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:21:14.269Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "ALLOW", "published": "2026-08-27T19:21:16.926Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:21:17.052Z"}
+{"eventType": "app.oauth2.token.grant", "actor": "Okta Admin Console", "outcome": "CHALLENGE", "published": "2026-08-27T19:21:17.936Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:21:18.256Z"}
+{"eventType": "user.session.access_admin_app", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:21:18.294Z"}
+{"eventType": "user.authentication.sso", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:21:18.250Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:21:18.250Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T19:40:36.625Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T19:54:51.422Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:54:55.756Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:54:55.809Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:55:42.321Z"}
+{"eventType": "user.authentication.verify", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:55:42.466Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:55:43.164Z"}
+{"eventType": "user.session.access_admin_app", "actor": "Okta System", "outcome": "FAILURE", "published": "2026-08-27T19:55:43.795Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T19:55:58.620Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:56:08.555Z"}
+{"eventType": "user.authentication.verify", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:56:08.655Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:56:09.292Z"}
+{"eventType": "user.authentication.sso", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:56:10.149Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:56:10.149Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T19:56:10.155Z"}
+{"eventType": "user.session.access_admin_app", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T19:56:10.199Z"}
+{"eventType": "user.lifecycle.create", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:05:04.662Z"}
+{"eventType": "user.mfa.factor.activate", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:05:04.652Z"}
+{"eventType": "user.lifecycle.activate", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:05:04.795Z"}
+{"eventType": "system.email.delivery", "actor": "Okta System", "outcome": "SUCCESS", "published": "2026-08-27T20:06:04.224Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "vdanalyst test", "outcome": "CHALLENGE", "published": "2026-08-27T20:07:16.518Z"}
+{"eventType": "user.account.update_password", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:07:40.114Z"}
+{"eventType": "user.account.reset_password", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:07:40.139Z"}
+{"eventType": "user.mfa.factor.activate", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:07:40.141Z"}
+{"eventType": "device.user.add", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:09:03.894Z"}
+{"eventType": "user.mfa.factor.activate", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:09:03.961Z"}
+{"eventType": "user.mfa.factor.activate", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:09:03.957Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "vdanalyst test", "outcome": "ALLOW", "published": "2026-08-27T20:09:08.200Z"}
+{"eventType": "user.session.start", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:09:08.217Z"}
+{"eventType": "user.authentication.verify", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:09:08.300Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T20:09:09.025Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T20:09:10.911Z"}
+{"eventType": "user.authentication.sso", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:09:10.909Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T20:09:10.909Z"}
+{"eventType": "group.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:10:52.909Z"}
+{"eventType": "application.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:10:52.986Z"}
+{"eventType": "application.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:10:53.289Z"}
+{"eventType": "application.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:10:53.342Z"}
+{"eventType": "application.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T20:10:53.042Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "vdanalyst test", "outcome": "ALLOW", "published": "2026-08-27T20:31:59.530Z"}
+{"eventType": "user.authentication.sso", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T20:31:59.708Z"}
+{"eventType": "app.oauth2.token.revoke", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T21:03:16.958Z"}
+{"eventType": "user.session.end", "actor": "vdanalyst test", "outcome": "SUCCESS", "published": "2026-08-27T21:03:17.823Z"}
+{"eventType": "app.oauth2.token.revoke", "actor": "Okta Admin Console", "outcome": "FAILURE", "published": "2026-08-27T21:03:20.714Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T21:03:28.708Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T21:03:52.483Z"}
+{"eventType": "user.authentication.verify", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T21:03:52.591Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T21:03:52.544Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T21:03:53.111Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T21:03:54.622Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Dashboard", "outcome": "SUCCESS", "published": "2026-08-27T21:03:54.613Z"}
+{"eventType": "user.authentication.sso", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T21:03:54.613Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "ALLOW", "published": "2026-08-27T21:03:57.025Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T21:03:57.124Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T21:03:58.260Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T21:03:58.251Z"}
+{"eventType": "user.authentication.sso", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T21:03:58.251Z"}
+{"eventType": "user.session.access_admin_app", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T21:03:58.314Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "ABANDONED", "published": "2026-08-27T21:04:05.021Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T23:18:29.644Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:18:58.979Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:18:58.964Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:19:01.182Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:19:01.160Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:19:07.795Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:19:07.817Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:19:38.634Z"}
+{"eventType": "user.session.start", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:19:38.706Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "FAILURE", "published": "2026-08-27T23:19:41.031Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:20:24.987Z"}
+{"eventType": "user.authentication.auth_via_mfa", "actor": "Victor David Sarkibaka", "outcome": "UNANSWERED", "published": "2026-08-27T23:20:25.112Z"}
+{"eventType": "user.authentication.verify", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:20:25.122Z"}
+{"eventType": "app.oauth2.authorize.code", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T23:20:25.912Z"}
+{"eventType": "user.authentication.sso", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:20:26.792Z"}
+{"eventType": "app.oauth2.token.grant.id_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T23:20:26.791Z"}
+{"eventType": "user.session.access_admin_app", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:20:26.840Z"}
+{"eventType": "app.oauth2.token.grant.access_token", "actor": "Okta Admin Console", "outcome": "SUCCESS", "published": "2026-08-27T23:20:26.797Z"}
+{"eventType": "user.mfa.factor.activate", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:47:51.429Z"}
+{"eventType": "user.lifecycle.create", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:47:51.441Z"}
+{"eventType": "user.lifecycle.activate", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:47:51.580Z"}
+{"eventType": "group.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:47:53.795Z"}
+{"eventType": "application.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:47:53.876Z"}
+{"eventType": "application.user_membership.add", "actor": "Victor David Sarkibaka", "outcome": "SUCCESS", "published": "2026-08-27T23:47:53.842Z"}
+{"eventType": "policy.evaluate_sign_on", "actor": "Victor David Sarkibaka", "outcome": "CHALLENGE", "published": "2026-08-27T23:48:16.518Z"}
