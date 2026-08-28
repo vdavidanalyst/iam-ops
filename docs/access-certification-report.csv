@@ -1,0 +1,6 @@
+Name,Email,Status,Groups,Last Login,Flagged,Reason
+Alex Rivera,vdanalyst1+alex@gmail.com,PROVISIONED,GRP-IT-Admin,Never,N,
+Rowland Momoh,rolandmomoh@gmail.com,PROVISIONED,GRP-Finance-Sensitive,Never,N,
+Sam Okafor,vdanalyst1+sam@gmail.com,PROVISIONED,GRP-Standard-Employee,Never,N,
+Victor David Sarkibaka,vdavidsarkibaka@byupathway.edu,ACTIVE,GRP-Standard-Employee,2026-08-27T23:49:36.000Z,Y,Inactive 0 days with active access
+vdanalyst test,vdanalyst1@gmail.com,ACTIVE,GRP-Standard-Employee,2026-08-27T20:31:59.000Z,Y,Inactive 0 days with active access
