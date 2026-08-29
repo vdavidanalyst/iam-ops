@@ -129,3 +129,10 @@ Error Code: access_denied
 **Symptom:** Logging in as the org's Super Admin always routed to the Admin Console, with no way to reach the standard "My Apps" end-user view.
 **Cause:** Super Admin accounts on Okta don't get the standard end-user dashboard experience by default.
 **Fix:** Created a dedicated non-admin test user and added them to `GRP-Standard-Employee`, which correctly landed on the standard end-user dashboard — also a more realistic way to validate the actual employee SSO experience anyway.
+
+### 11. Discovered pre-existing firewall rule exposing port 8080 publicly
+**Where:** Phase 7, deployment to GCP VM
+**Symptom:** Uvicorn logs showed an unsolicited external HTTP CONNECT request from a public IP (139.59.103.90) shortly after starting the service bound to 0.0.0.0 — indicative of internet background scanning reaching the app.
+**Cause:** A pre-existing firewall rule (`allow-dvwa`, from an active DVWA/OpenVAS project on the same VM) permits ingress from `0.0.0.0/0` on several ports including 8080.
+**Decision:** Rather than modify a firewall rule shared with another active project — which could affect DVWA/OpenVAS availability — the IAM-Ops Portal service was rebound to `127.0.0.1` instead of `0.0.0.0`. This makes the app unreachable externally regardless of the broader firewall posture, without touching infrastructure outside this project's scope.
+**Takeaway:** Defense should not rely on a single control. Even though the firewall technically allowed the traffic, binding the application itself to localhost provided an independent, scoped layer of protection — a good example of not assuming a shared/inherited security boundary is sufficient for a new service.
